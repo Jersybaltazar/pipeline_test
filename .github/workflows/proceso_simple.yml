@@ -1,3 +1,14 @@
-steps:
-  - name: Mostrar mensaje en la consola
-    run: echo "¡Hola! Este es un proceso automatizado."
+name: Proceso Simple
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Mostrar mensaje en la consola
+      run: echo "¡Hola! Este es un proceso automatizado."
