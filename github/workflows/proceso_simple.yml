@@ -1,0 +1,3 @@
+steps:
+  - name: Mostrar mensaje en la consola
+    run: echo "¡Hola! Este es un proceso automatizado."
